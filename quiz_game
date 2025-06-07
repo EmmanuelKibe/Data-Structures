@@ -3,10 +3,12 @@
 quiz = {'What is the capital city of Saudi Arabia?: [a)Riyadh b)Kathmandu c)AbuDhabi]' : 'Riyadh', 'Which YouTube channel has the most subscribers?: [a)PewDiePie b)Mr Beast c)UrCristiano]' : 'Mr Beast', 'What is the largest land mammal?: [a)Buffalo b)Rhinoceros c)Elephant]' : 'Elephant'}
 
 #Initialize a score variable
-score = 0
+
 
 #Iterate through the quiz dictionary
 for key in quiz:
+    global score
+    score = 0
     print(key)
     answer = input('Answer: ')
     
